@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/favicon/logobike.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="scripts/submodal.js"></script> 
+    <script src="scripts/main.js" defer></script>
+    <title>Bikers MTB</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Ciclismo</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#top">Início</a></li>
+                <li><a href="#modal">Modalidades</a></li>
+                <li><a href="#submodal">Submodalidades</a></li>
+                <li><a href="#bike">A Bicicleta</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="imagem_carrossel">
+            <img id="img_bike1" src="imagens/mtb1.jpeg" alt="bicicleta na chapada diamantina">
+            <img id="img_bike1_left" src="imagens/mtb1.jpeg" alt="bicicleta na chapada diamantina">
+            <img id="img_bike1_right" src="imagens/mtb1.jpeg" alt="bicicleta na chapada diamantina">
+        </div>
+        <p id="pre_texto">Utilizada por alguns como meio de diversão, por outros como meio de locomoção, e para outros, como instrumento para práticas esportivas, a bicicleta, bem como as práticas utilizando-a, tem tomado cada vez mais espeço na sociedade.</p>
+        <h2 id="know">Conheça um pouco mais</h2>
+        <video src="imagens/vid_mtb.mp4" loop autoplay muted id="video_know"></video>
+        <p>Dentre diferentes tipos de bicicletas e modalidades, escolha aquela que mais se enquadra com você</p>
+
+        <h2 id="modal">Modalidades</h2>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Moutain bike</th>
+                    <th>Road bike</th>
+                </tr>
+                <tr>
+                    <td class="texto_modal">É uma modalidade de ciclismo que consiste em pedalar em terrenos irregulares, como trilhas, montanhas e florestas.</td>
+                    <td class="texto_modal">É uma modalidade que consiste em pedalar exclusivamente em trechos pavimentados, visto que tem enfoque na velocidade</td>
+                </tr>
+                <tr>
+                    <th> <img class="table_img" src="imagens/table_mtb.jpeg" alt="bicicleta na trilha"> </th>
+                    <th> <img class="table_img" src="imagens/table_speed.jpeg" alt="bicicleta na estrada"> </th>
+                </tr>
+            </table>
+        </div>
+        <h2 id="submodal">Submodalidades</h2>
+        <h3>Moutain bike</h3>
+        <div class="container_quadro">
+            <div class="seta">
+                <img src="imagens/seta_esquerda.png" alt="seta anterior" id="seta_ant_mtb">
+            </div>
+            <div class="quadro">
+                <div class="caixas">
+                    <div class="quadro_bike">
+                        <img src="" alt="" id="img_sub_mtb">
+                    </div>
+                    <p id="texto_sub_mtb"></p>
+                </div>
+                <div class="caixas">
+                    <div class="quadro_bike">
+                        <img src="" alt="" id="img_bike_mtb">
+                    </div>
+                    <p class="modal_bike">Bicicleta para a modalidade</p>
+                </div>
+                <p id="descricao_mtb"></p>
+            </div>
+            <div class="seta">
+                <img src="imagens/seta_direita.png" alt="seta próximo" id="seta_prox_mtb">
+            </div>
+        </div>
+        <h3>Road bike</h3>
+        <div class="container_quadro">
+            <div class="seta">
+                <img src="imagens/seta_esquerda.png" alt="seta anterior" id="seta_ant_speed">
+            </div>
+            <div class="quadro">
+                <div class="caixas">
+                    <div class="quadro_bike">
+                        <img src="" alt="" id="img_sub_speed">
+                    </div>
+                    <p id="texto_sub_speed"></p>
+                </div>
+                <div class="caixas">
+                    <div class="quadro_bike">
+                        <img src="" alt="" id="img_bike_speed">
+                    </div>
+                    <p class="modal_bike">Bicicleta para a modalidade</p>
+                </div>
+                <p id="descricao_speed"></p>
+            </div>
+            <div class="seta">
+                <img src="imagens/seta_direita.png" alt="seta próximo" id="seta_prox_speed">
+            </div>
+        </div>
+
+        <h2 id="bike">A Bicicleta</h2>
+            <div class="mapa">
+                <img src="imagens/componentes/bike_imgmap.png" alt="mapa de componentes de uma bicicleta">
+            
+                <div id="susp_dt" class="area">
+                    <p href="">Suspensão dienteira</p>
+                </div>
+
+                <div id="freio" class="area">
+                    <p href="">Freios</p>
+                </div>
+
+                <div id="susp_tr" class="area">
+                    <p href="">Suspensão traseira</p>
+                </div>
+
+                <div id="relacao" class="area">
+                    <p href="">Transmissão</p>
+                </div>
+
+                <div id="central" class="area">
+                    <p href="">Central</p>
+                </div>
+            </div>
+            <div id="janela">
+                <div id="externa">
+                    <div id="interna">
+                        <div class="componente">
+                            <img id="img_comp" src="" alt="">
+                        </div>
+                        <div id="info">
+                            <h5 id="nome_comp"></h5>
+                            <p id="uti_comp"></p>
+                        </div>
+                    </div>
+                </div>
+                <p id="p_fechar"><span>&times;</span></p>
+            </div>
+
+       
+            
+            <footer>
+                <p>DSFR - Instituto Federal de São Paulo - Câmpus Guarulhos</p>
+            </footer>
+    </main>
+</body>
+</html>
